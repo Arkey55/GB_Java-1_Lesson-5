@@ -2,6 +2,13 @@ package ru.geekbrains.lesson_5;
 
 class Employee {
 
+    private String name;
+    private String position;
+    private String email;
+    private String phoneNumber;
+    private int salary;
+    private int age;
+
     Employee(String name, String position, String email, String phoneNumber, int salary, int age) {
         this.name = name;
         this.position = position;
@@ -10,13 +17,6 @@ class Employee {
         this.salary = salary;
         this.age = age;
     }
-
-    private String name;
-    private String position;
-    private String email;
-    private String phoneNumber;
-    private int salary;
-    private int age;
 
     void postEmployeeInfo (){
         System.out.println("Карточка сотрудника: " + name);
